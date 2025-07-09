@@ -28,7 +28,7 @@ bool isHovered=false;
 
     return Material(
     color:isHovered?Colors.green:Colors.deepOrange,
-      borderRadius: BorderRadiusGeometry.circular(20),
+      borderRadius: BorderRadiusGeometry.circular(isHovered?50:20),
       shadowColor: Colors.red,
       elevation: 3,
       child: InkWell(
@@ -66,7 +66,7 @@ bool isHovered=false;
                   border: Border.all(),
                   borderRadius: BorderRadius.circular(20),
                 ),
-                margin: const EdgeInsets.only(left: 8.0, bottom: 4),
+                margin:  EdgeInsets.only(left:isHovered?20.0:8, bottom: 4),
                 padding: const EdgeInsets.all(4),
                 child: Text(widget.model.price),
               ),
