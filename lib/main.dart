@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:vews/screens/dashboard_page.dart';
 
+import 'screens/bottom_nav_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -47,7 +49,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
       ),
-      home: const DashboardPage(),
+      home: const BottomNavPage(),
     );
   }
 }
